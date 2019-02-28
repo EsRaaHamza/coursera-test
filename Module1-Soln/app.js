@@ -43,21 +43,21 @@
                if (splittedStringArr[i] == null || splittedStringArr[i].length == 0 )
                {
                    noOfEmptyItems++;
-                //    console.log("CONDITION 1 : "+splittedStringArr[i]);            
-                //    console.log("CONDITION 2 : "+splittedStringArr[i].length);            
+                   console.log("CONDITION 1 : "+splittedStringArr[i]);            
+                   console.log("CONDITION 2 : "+splittedStringArr[i].length);            
 
                }
-               if (splittedStringArr[i] == " " || splittedStringArr[i].length == 1 )
+               if (splittedStringArr[i] == " " && splittedStringArr[i].length == 1 )
                {
                    noOfEmptyItems++;
-                //    console.log("CONDITION 1- dash  : "+splittedStringArr[i]);            
-                //    console.log("CONDITION 2- dash : "+splittedStringArr[i].length);            
+                   console.log("CONDITION 1- dash  : "+splittedStringArr[i]);            
+                   console.log("CONDITION 2- dash : "+splittedStringArr[i].length);            
 
                }
             }
-            // console.log("LENGTH : "+splittedStringArr.length);            
-            // console.log("noOfEmptyItems : "+noOfEmptyItems);
-            // console.log("SUBSTRACTION: "+splittedStringArr.length-noOfEmptyItems);
+            console.log("ArrLENGTH : "+splittedStringArr.length);            
+            console.log("noOfEmptyItems : "+noOfEmptyItems);
+            console.log("SUBSTRACTION: "+splittedStringArr.length-noOfEmptyItems);
 
             if (splittedStringArr.length-noOfEmptyItems   <= 3) {
                 $scope.outputMessage = "ENJOY! :) ";
@@ -86,3 +86,4 @@
 
     }
 })();
+
